@@ -14,6 +14,7 @@ pipeline {
         )
         sh 'chmod +x gradlew'
         sh './gradlew init'
+        sh './gradlew :spotlessApply'
         sh './gradlew build'
       }
     }
