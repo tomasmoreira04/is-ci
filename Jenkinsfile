@@ -7,7 +7,11 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'git pull https://github.com/sperdich/UTN.git'
+        git(
+          url: "https://github.com/tomasmoreira04/is-ci",
+          branch: "master",
+          credentialsId: "tp-is"
+        )
         sh 'chmod +x gradlew'
         sh './gradlew init'
         sh './gradlew build'
