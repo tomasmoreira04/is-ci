@@ -15,17 +15,17 @@ pipeline {
     }
     stage('Test') {
       steps {
-
+        echo 'dummy'
       }
     }
     stage('Validate') {
       steps {
-
+        echo 'dummy'
       }
     }
     stage('Deploy') {
       steps {
-
+        echo 'dummy'
       }
     }
   }
