@@ -1,6 +1,6 @@
 pipeline {
   agent any
-  
+
   tools {
     gradle 'gradle'
   }
@@ -13,8 +13,20 @@ pipeline {
         sh './gradlew build'
       }
     }
-    stage('Test') {}
-    stage('Validate') {}
-    stage('Deploy') {}
+    stage('Test') {
+      steps {
+
+      }
+    }
+    stage('Validate') {
+      steps {
+
+      }
+    }
+    stage('Deploy') {
+      steps {
+
+      }
+    }
   }
 }
